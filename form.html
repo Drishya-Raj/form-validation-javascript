@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registration-form"  name="myform" action="#">
+            <p class="regform">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" autocomplete="additional-name"
+                    placeholder="Enter your first name" required>
+                <span class="error" id="first-name-error"></span>
+            </p>
+            <p class="regform">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                <span class="error" id="last-name-error"></span>
+            </p>
+            <p class="regform">
+                <label for="mob">Phone number:</label>
+                <input type="tel" id="mob" name="mob" autocomplete="additional-name"
+                    placeholder="Enter your phone number" required>
+                <span class="error" id="mob-error"></span>
+            </p>
+            <p class="regform">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="abc@gmail.com" required>
+                <span class="error" id="email-error"></span>
+            </p>
+            <p class="regform1">
+                <label for="password">Password: </label>
+                    <input type="password" id="password" name="password"  placeholder="Enter your password" required>
+                    <img src="icons/hide.png" alt="hide"  id="hide" />
+                <span class="error" id="password-error"></span>
+            </p>
+            <p class="regform2">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+                    required>   
+                    <img src="icons/hide.png" alt="hide1"  id="hide1" />    
+                <span class="error" id="confirm-password-error"></span>
+            </p>
+            <p class="regform">
+                <input type="submit" value="Register" id="register">
+                <span class="success" id="success"></span>
+            </p>
+        </form>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
